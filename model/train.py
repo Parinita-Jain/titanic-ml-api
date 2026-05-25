@@ -103,3 +103,9 @@ mlflow.sklearn.log_model(
     "model",
     registered_model_name="TitanicBestModel"   # 🔥 THIS LINE IS KEY
 )
+
+import joblib
+
+joblib.dump(pipeline, "model/model.pkl")
+
+print("Model saved successfully")
